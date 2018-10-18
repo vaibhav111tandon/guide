@@ -3,7 +3,7 @@ title: Control Flow
 ---
 # Control Flow
 
-Control flow statements are exactly what the term means. They are statements that alter execution flow based on decisions, loops and branching so that the program can conditionally execute blocks of code.
+Control flow statements are exactly what the term means. They are statements that alter execution flow based on decisions, loops and branching so that the program can conditionally execute blocks of code.Or it can in short means the statements which transfer the flow of control from one part of the program to the another part of the program.
 
 Primarily, Java has the following constructs for flow control:
 
@@ -97,5 +97,39 @@ if( cash < 25 ){
 }
 ```
 In this example, `meetFriendsAtSportsBar()` will be executed.
+
+* `break`
+break statement can also be used as a control flow statement, it breaks the loop or the switch statements and transfers the control out of the loop
+```java
+for(int i=0;i<5;i++)
+{
+if(i!=2)
+System.out.print(i+"\t");
+else
+break;
+}
+System.out.println("Till Here Only..."); 
+
+// Output: 0    1   Till Here Only...
+
+```
+* `continue`
+continue statement can also be used as a control flow statement, it skops the particular statement and transfers the flow to the next iterations.
+
+```java
+for(int i=0;i<5;i++)
+{
+if(i!=2)
+System.out.print(i+"\t");
+else
+continue;
+}
+System.out.println("Till Here Only..."); 
+
+// Output: 0    1   3   4   Till Here Only...
+
+```
+* `return`
+return statement can also be used to transfer the control from the called function to the calling function.
 
 ![:rocket:](https://forum.freecodecamp.org/images/emoji/emoji_one/rocket.png?v=2 ":rocket:") <a href='https://repl.it/CJZi/1' target='_blank' rel='nofollow'>Run Code</a>
